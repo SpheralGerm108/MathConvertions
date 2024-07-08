@@ -3,5 +3,7 @@ public class Main {
         Binary.convertB(10);
         System.out.println("\n");
         Binary.ConvertInt("1011");
+        System.out.println("\n");
+        Oct.ConvertH(12);
     }
 }
