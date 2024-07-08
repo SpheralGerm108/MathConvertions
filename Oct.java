@@ -1,11 +1,10 @@
 public class Oct {
-    public static int ConvertH(int input){
-        int output;
-        output = input%8;
+    public static int ConvertO(int input){
+        int output = input%8;
 
-        if (input != 1) {
+        if (input > 8) {
             input = input/8;
-            ConvertH(input);
+            ConvertO(input);
         }
 
         System.out.print(output);
@@ -13,7 +12,18 @@ public class Oct {
     }
 
     public static double ConvertInt(int input){
-        int output = 0;
-        return output;
+        String blah = String.valueOf(input);
+
+        double decimal = 0;
+        for(int i = blah.length()-1; i >= 0; i--){
+            StringBuilder reversed = new StringBuilder();
+            reversed.append(input);
+            reversed.reverse(); 
+            int part = Integer.parseInt(String.valueOf(reversed.charAt(i)));
+            decimal += part * Math.pow(8, i);
+        }
+
+        System.out.println(decimal);
+        return decimal;
     }
 }

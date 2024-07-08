@@ -1,9 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        Binary.convertB(10);
-        System.out.println("\n");
+        Binary.convertB(100);
+        System.out.println("\s");
         Binary.ConvertInt("1011");
-        System.out.println("\n");
-        Oct.ConvertH(12);
+        
+        Oct.ConvertO(100);
+        System.out.println("\s");
+        Oct.ConvertInt(144);
+
+
     }
 }

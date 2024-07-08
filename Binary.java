@@ -3,8 +3,7 @@ import java.util.regex.Pattern;
 
 public class Binary {
     public static int convertB(int input){
-        int output;
-        output = input%2;
+        int output = input%2;
 
         if (input != 1) {
             input = input/2;
