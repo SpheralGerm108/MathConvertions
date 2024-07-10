@@ -8,6 +8,6 @@ public class Main {
         System.out.println("\b");
         Oct.ConvertInt(144);
 
-        
+        Hex.ConvertH(10);
     }
 }

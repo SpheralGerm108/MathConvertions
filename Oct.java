@@ -16,10 +16,10 @@ public class Oct {
 
         double decimal = 0;
         for(int i = blah.length()-1; i >= 0; i--){
-            StringBuilder reversed = new StringBuilder();
-            reversed.append(input);
-            reversed.reverse(); 
-            int part = Integer.parseInt(String.valueOf(reversed.charAt(i)));
+            StringBuilder reverseString = new StringBuilder();
+            reverseString.append(input);
+            reverseString.reverse(); 
+            int part = Integer.parseInt(String.valueOf(reverseString.charAt(i)));
             decimal += part * Math.pow(8, i);
         }
 
