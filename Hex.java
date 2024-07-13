@@ -40,7 +40,7 @@ public class Hex {
             reverseString.reverse(); 
             
             int part = 0;
-            switch (input.charAt(i)) {
+            switch (reverseString.charAt(i)) {
                 case '0': part = 0; break;  
                 case '1': part = 1; break; 
                 case '2': part = 2; break; 
