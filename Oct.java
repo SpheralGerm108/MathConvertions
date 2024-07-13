@@ -12,10 +12,10 @@ public class Oct {
     }
 
     public static double ConvertInt(int input){
-        String blah = String.valueOf(input);
+        String inputString = String.valueOf(input);
 
         double decimal = 0;
-        for(int i = blah.length()-1; i >= 0; i--){
+        for(int i = inputString.length()-1; i >= 0; i--){
             StringBuilder reverseString = new StringBuilder();
             reverseString.append(input);
             reverseString.reverse(); 

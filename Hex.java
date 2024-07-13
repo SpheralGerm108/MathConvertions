@@ -1,6 +1,6 @@
 public class Hex {
     public static char ConvertH(int input){
-        char blah = '#';
+        char output = '#';
         int remainder = input%16;
         
         if (input > 16) {
@@ -9,26 +9,26 @@ public class Hex {
         }
 
         switch (remainder) {
-            case 0: blah = '0'; break;
-            case 1: blah = '1'; break;
-            case 2: blah = '2'; break;
-            case 3: blah = '3'; break;
-            case 4: blah = '4'; break;
-            case 5: blah = '5'; break;
-            case 6: blah = '6'; break;
-            case 7: blah = '7'; break;
-            case 8: blah = '8'; break;
-            case 9: blah = '9'; break;
-            case 10: blah  = 'A'; break;
-            case 11: blah  = 'B'; break;
-            case 12: blah  = 'C'; break;
-            case 13: blah  = 'D'; break;
-            case 14: blah  = 'E'; break;
-            case 15: blah  = 'F'; break;
+            case 0: output = '0'; break;
+            case 1: output = '1'; break;
+            case 2: output = '2'; break;
+            case 3: output = '3'; break;
+            case 4: output = '4'; break;
+            case 5: output = '5'; break;
+            case 6: output = '6'; break;
+            case 7: output = '7'; break;
+            case 8: output = '8'; break;
+            case 9: output = '9'; break;
+            case 10: output  = 'A'; break;
+            case 11: output  = 'B'; break;
+            case 12: output  = 'C'; break;
+            case 13: output  = 'D'; break;
+            case 14: output  = 'E'; break;
+            case 15: output  = 'F'; break;
         }
 
-        System.out.print(blah);
-        return blah;
+        System.out.print(output);
+        return output;
     }
 
     public static double ConvertInt(String input){

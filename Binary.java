@@ -5,11 +5,18 @@ public class Binary {
     public static int convertB(int input){
         int output = input%2;
 
+        StringBuilder builder = new StringBuilder("");
+
         if (input != 1) {
             input = input/2;
+            builder.append(output);
             convertB(input);
         } 
 
+        
+        
+
+        System.out.println(builder);
         System.out.print(output);
         return output;
     }
