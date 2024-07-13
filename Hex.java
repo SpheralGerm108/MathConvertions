@@ -39,14 +39,30 @@ public class Hex {
             reverseString.append(input);
             reverseString.reverse(); 
             
+            int part = 0;
             switch (input.charAt(i)) {
-                case 1: 
-                    
-                    break;
-            
+                case '0': part = 0; break;  
+                case '1': part = 1; break; 
+                case '2': part = 2; break; 
+                case '3': part = 3; break; 
+                case '4': part = 4; break; 
+                case '5': part = 5; break; 
+                case '6': part = 6; break; 
+                case '7': part = 7; break; 
+                case '8': part = 8; break; 
+                case '9': part = 9; break; 
+                case 'A': part = 10; break; 
+                case 'B': part = 11; break; 
+                case 'C': part = 12; break; 
+                case 'D': part = 13; break; 
+                case 'E': part = 14; break; 
+                case 'F': part = 15; break; 
             }
+
+            decimal += part * Math.pow(16, i); 
         }
 
+        System.out.println(decimal);
         return decimal;
     }
 }

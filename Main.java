@@ -9,6 +9,7 @@ public class Main {
         Oct.ConvertInt(144);
 
         Hex.ConvertH(100);
-
+        System.out.println("\b");
+        Hex.ConvertInt("64");
     }
 }
