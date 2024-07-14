@@ -1,23 +1,37 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.ArrayList;
+
 
 public class Binary {
     public static int convertB(int input){
         int output = input%2;
 
-        StringBuilder builder = new StringBuilder("");
+        ArrayList<String> baba = new ArrayList<String>();
+        baba.add(String.valueOf(output));
+
 
         if (input != 1) {
             input = input/2;
-            builder.append(output);
             convertB(input);
         } 
 
+        //////////////
         
+        
+        
+        StringBuilder sb = new StringBuilder();
+
+        for(String b : baba){
+            sb.append(String.valueOf(output));
+        }
+        String result = sb.toString();
+        System.out.println(result);
         
 
-        System.out.println(builder);
-        System.out.print(output);
+        ///////////////////
+
+        // System.out.print(output);
         return output;
     }
 
