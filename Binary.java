@@ -7,9 +7,10 @@ public class Binary {
     public static int convertB(int input){
         int output = input%2;
 
+        //////
         ArrayList<String> baba = new ArrayList<String>();
         baba.add(String.valueOf(output));
-
+        //////
 
         if (input != 1) {
             input = input/2;
@@ -25,9 +26,10 @@ public class Binary {
         for(String b : baba){
             sb.append(String.valueOf(output));
         }
-        String result = sb.toString();
-        System.out.println(result);
         
+        String bob = "bob";
+        String emma = "emma";
+        System.out.println(bob.concat(emma));
 
         ///////////////////
 
