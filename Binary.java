@@ -4,11 +4,14 @@ import java.util.ArrayList;
 
 
 public class Binary {
+
+    ArrayList<String> baba = new ArrayList<String>();
+
     public static int convertB(int input){
         int output = input%2;
 
         //////
-        ArrayList<String> baba = new ArrayList<String>();
+        
         baba.add(String.valueOf(output));
         //////
 
