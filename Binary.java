@@ -5,14 +5,19 @@ import java.util.ArrayList;
 
 public class Binary {
 
+    // private 
     ArrayList<String> baba = new ArrayList<String>();
+
+    public void addString (int input){
+        baba.add(String.valueOf(input));
+    }
 
     public static int convertB(int input){
         int output = input%2;
 
         //////
-        
-        baba.add(String.valueOf(output));
+        // addString(output);
+        // baba.add(String.valueOf(output));
         //////
 
         if (input != 1) {
@@ -24,19 +29,19 @@ public class Binary {
         
         
         
-        StringBuilder sb = new StringBuilder();
+        // StringBuilder sb = new StringBuilder();
 
-        for(String b : baba){
-            sb.append(String.valueOf(output));
-        }
+        // for(String b : baba){
+        //     sb.append(String.valueOf(output));
+        // }
         
-        String bob = "bob";
-        String emma = "emma";
-        System.out.println(bob.concat(emma));
+        // String bob = "bob";
+        // String emma = "emma";
+        // System.out.println(bob.concat(emma));
 
         ///////////////////
 
-        // System.out.print(output);
+        System.out.print(output);
         return output;
     }
 
